@@ -714,12 +714,11 @@ export const Messages = [
         en: "Roman emperors sometimes used golden toilets, not for hygiene but for show."
     },
     {
-        2003: {
-            categoryId: "historical-funny",
-            category: "Tarihsel Saçmalıklar",
-            tr: "Ortaçağda insanlar çıplak şekilde bulaşıcı hastalık yaydığını düşündükleri için aynadan korkardı.",
-            en: "In the Middle Ages, people feared mirrors thinking they spread diseases."
-        }
+        id: "2003",
+        categoryId: "historical-funny",
+        category: "Tarihsel Saçmalıklar",
+        tr: "Ortaçağda insanlar çıplak şekilde bulaşıcı hastalık yaydığını düşündükleri için aynadan korkardı.",
+        en: "In the Middle Ages, people feared mirrors thinking they spread diseases."
     },
     {
         id: "2004",
@@ -1065,12 +1064,11 @@ export const Messages = [
         en: "Trees grow slowly but when close, their roots tangle up and have a ‘root fight.’"
     },
     {
-        3003: {
-            categoryId: "nature-irritating",
-            category: "Doğa'nın Gıcık Gerçekleri",
-            tr: "Bir sineğin ömrü 24 saattir ama o kadar sinir bozucudur ki sanki sonsuza kadar evinde uçuyormuş gibi hissedersin.",
-            en: "A fly lives only 24 hours but is so annoying you feel like it’s flying forever in your house."
-        }
+        id: "3003",
+        categoryId: "nature-irritating",
+        category: "Doğa'nın Gıcık Gerçekleri",
+        tr: "Bir sineğin ömrü 24 saattir ama o kadar sinir bozucudur ki sanki sonsuza kadar evinde uçuyormuş gibi hissedersin.",
+        en: "A fly lives only 24 hours but is so annoying you feel like it’s flying forever in your house."
     },
     {
         id: "3004",
@@ -1423,12 +1421,11 @@ export const Messages = [
         en: "Astronauts’ hair seems to grow on the moon due to low gravity, but unfortunately no barber."
     },
     {
-        4004: {
-            categoryId: "space-facts",
-            category: "Uzay",
-            tr: "Bir uzay yürüyüşünde astronotların kıyafetleri o kadar pahalı ki bir düşse panik yaşanır.",
-            en: "Astronaut suits are so expensive that losing one on a spacewalk causes panic."
-        }
+        id: "4004",
+        categoryId: "space-facts",
+        category: "Uzay",
+        tr: "Bir uzay yürüyüşünde astronotların kıyafetleri o kadar pahalı ki bir düşse panik yaşanır.",
+        en: "Astronaut suits are so expensive that losing one on a spacewalk causes panic."
     },
     {
         id: "4005",

@@ -55,13 +55,14 @@ export async function getOkunmayanMesajlar(): Promise<typeof Messages> {
   }
 }
 
-async function kaydetGosterilenMesaj(id: string) {
+export async function kaydetGosterilenMesaj(id: string) {
   try {
     const mevcutRaw = await AsyncStorage.getItem(OKUNANLAR_KEY);
     const mevcut: string[] = mevcutRaw ? JSON.parse(mevcutRaw) : [];
-
+    console.log('gosterline mesaj IDleri ', mevcut);
     if (!mevcut.includes(id)) {
       const guncel = [...mevcut, id];
+      console.log('guncel mesaj IDleri ', guncel);
       await AsyncStorage.setItem(OKUNANLAR_KEY, JSON.stringify(guncel));
     }
   } catch (e) {
@@ -153,7 +154,13 @@ export async function planla30GunlukBildirimler(
         id: notifId,
         title: `#${mesaj.id} • ${categoryName}`,
         body,
-        android: { channelId },
+        android: {
+          channelId,
+          pressAction: {
+            id: 'default',
+          },
+        },
+        data: { msgId: mesaj.id! },     // ⭐ mesaj id’sini payload’a koy
       },
       trigger,
     );
